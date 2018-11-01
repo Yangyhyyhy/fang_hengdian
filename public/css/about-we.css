@@ -1,0 +1,27 @@
+body{
+	background-image: url(../img/images/aboutbg.jpg);
+	background-attachment: fixed;
+}
+.bt-hight{
+	height: 320px;
+}
+.bt-tita{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+    display: block;
+    padding-top: 120px;
+    padding-right: 160px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: right;
+}
+.bt-titb {
+    color: #FFF;
+    font-size: 26px;
+    font-weight: bold;
+    display: block;
+    padding-top: 30px;
+    padding-right: 240px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: right;
+}

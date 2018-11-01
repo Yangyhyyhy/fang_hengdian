@@ -1,0 +1,545 @@
+
+/***** banner盒子 *****/
+.banner_container {
+    /***** 设置banner盒子显示区域总宽 *****/
+    width: 1000px;
+    height:370px;
+    
+    margin:0 auto;
+	position: relative;
+}
+
+.banner_container>.inner {
+	width: 100%;
+	height: 380px;
+	/*溢出内容隐藏*/
+	overflow: hidden;
+	/* 为了子元素的绝对定位*/
+	position: relative;
+}
+.banner_container>.inner>ul>li{
+	width:100%;
+}
+.inner li{
+	position:absolute; top:0; left:0;
+	opacity:0;
+	display:block;
+}
+.inner li.active{
+	opacity:1; 
+      
+}
+/***** 箭头通用样式 *****/
+.banner_container>.left-arrow,.banner_container>.right-arrow{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	top:calc(50% - 25px);
+	opacity: 0.5;
+}
+/***** 左箭头 *****/
+.banner_container>.left-arrow {
+    /***** 控制左箭头的位置,宽高及样式 *****/
+    left: 10%;
+	background:url(../img/ico/prev.gif) center center no-repeat ; 
+}
+/***** 右箭头 *****/
+.banner_container>.right-arrow {
+    /***** 控制左箭头的位置,宽高及样式 *****/
+    right: 10%;
+	background:url(../img/ico/next.gif) center center no-repeat ;
+}
+.banner_container>ul.pagination{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 15px;
+    width:100%;
+    height:16px;
+}
+/***** 页码样式 *****/
+.banner_container>ul.pagination>li{
+    width: 8px;
+    height: 8px;
+    margin:0 10px 0 10px;
+    background-color: #FFF;
+    border:1px solid #CECECE;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+/***** 当前激活项页码样式 *****/
+.banner_container>ul.pagination>li.active{
+    background-color: #A7936E;
+    border:3px solid #DFCEAD;
+}
+
+/**/
+
+
+/*第一块内容区*/
+
+.content-width {
+	width: 1000px;
+	margin: 30px auto 0 auto;
+	height: 590px;
+	
+
+}
+
+
+/*第一块内容区——第一块*/
+
+.content1-1 {
+	height: 316px;
+	width: 652px;
+	display: block;
+	float: left;
+}
+
+.hit {
+	height: 24px;
+}
+
+.ico {
+	width: 23px;
+	height: 23px;
+	display: block;
+}
+
+.left {
+	float: left;
+}
+
+.cont_ico1 {
+	background-image: url(../img/ico/ico.png);
+	background-position: 0 -4px;
+}
+
+.font-cont-tit {
+	font-size: 16px;
+	display: block;
+	float: left;
+	margin-left: 10px;
+	line-height: 18px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.more {
+	font-size: 14px;
+	display: block;
+	float: right;
+	margin-left: 10px;
+	line-height: 20px;
+	padding-bottom: 5px;
+}
+
+.fontGD {
+	font-family: '微软雅黑';
+}
+
+.line {
+	height: 1px;
+	background-color: #9d9d9d;
+	display: block;
+	margin-top: 2px;
+}
+/*图片区域*/
+.photo_quyu{
+	width: 652px;
+	height: 260px;	
+	display: flex;
+	
+}
+.photo_quyu_1{
+	width: 292px;
+	height: 251px;
+}
+.photo_quyu_1>section{
+	width: 290px;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	background-color:  black;
+	
+}
+/**/
+.photo_quyu_2{
+	width: 350px;
+	height: 251px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.photo_quyu_2>section:nth-child(1){
+	width: 173px;
+	height: 123px;
+	position: relative;
+	overflow: hidden;
+	background-color: black;
+}
+.photo_quyu_2>section:nth-child(2){
+	width: 173px;
+	height: 123px;
+	overflow: hidden;
+	position: relative;
+	background-color: black;
+}
+.photo_quyu_2>section:nth-child(3){
+	width: 350px;
+	height: 128px;
+	overflow: hidden;
+	position: relative;
+	background-color: black;
+}
+
+
+
+.photo_quyu_1 .sy-photo-msg a{
+	width: 272px;
+	height: 231px;
+	position: absolute;
+	font-size: 12px;
+	overflow: hidden;
+	color: #fff;
+	padding: 10px;
+	color: #fff;
+
+}
+.photo_quyu_2>section:nth-child(1) a{
+	width: 176px;
+	height: 123px;
+	position: absolute;
+	font-size: 12px;
+	overflow: hidden;
+	color: #fff;
+	padding: 10px;
+	color: #fff;
+}
+.photo_quyu_2>section:nth-child(2) a{
+	width: 176px;
+	height: 123px;
+	position: absolute;
+	font-size: 12px;
+	overflow: hidden;
+	color: #fff;
+	padding: 10px;
+	color: #fff;
+}
+.photo_quyu_2>section:nth-child(3) a{
+	width: 350px;
+	height: 128px;
+	position: absolute;
+	font-size: 12px;
+	overflow: hidden;
+	color: #fff;
+	padding: 10px;
+	color: #fff;
+}
+section img{
+	width: 100%;
+	transition: width .5s;
+}
+section div {
+	position: absolute;
+	left: 4px;
+	top: 0;
+	display: none;
+}
+section:hover .sy-photo-img {
+	width: 104%;
+	opacity: .4;
+}
+
+section:hover .sy-photo-msg {
+	display: block;
+}/*结束*/
+/*第一块内容区——第二块*/
+.content1-2 {
+	height: 316px;
+	width: 330px;
+	display: block;
+	float: left;
+	margin-left: 18px;
+}
+.cont_ico2 {
+	background-image: url(../img/ico/ico.png);
+	background-position: -28px -4px;
+}
+.newslist ul li {
+	border-bottom: 1px dotted gainsboro;
+	line-height: 35px;
+	font: normal 14px/39px "微软雅黑";
+	padding: 0 0 0 10px;
+	background: url(../img/ico/dian.jpg) no-repeat 2px 18px;}
+.u1 li:hover a{
+	color: orangered;
+}
+
+.newslist ul li span {
+	float: right;
+	background: url(../img/ico/ico.png) no-repeat 0px -126px;
+	color: white;
+	width: 47px;
+	height: 20px font: normal 8px/25px Arial;
+	text-align: center;
+}
+
+.content1-3 {
+	height: 316px;
+	width: 652px;
+	display: block;
+	float: left;
+}
+
+.cont_ico3 {
+	background-image: url(../img/ico/ico.png);
+	background-position: -56px -4px;
+}
+
+/*动画开始*/
+.xiuxian_hd {
+	width: 374px;
+	height: 220px;
+	margin-top: 10px;
+	float: left;
+}
+
+
+.xiuxian_hd li {
+	padding: 9px 11px 0px 60px;
+	height: 70px;
+	border-top: 1px solid #fff;
+	cursor: pointer;
+	background-color: #d7e8b4;
+}
+
+.poz1 {
+	background-image: url(../img/ico/ico-d.png);
+	background-repeat: no-repeat;
+	background-position: 0 -60px;
+}
+
+.poz1 span {
+	height: 28px;
+	overflow: hidden;
+	display: block;
+	padding-left: 20px;
+}
+
+.poz2 {
+	background-image: url(../img/ico/ico-d.png);
+	background-repeat: no-repeat;
+	background-position: 0 -188px;
+}
+
+.poz2 span {
+	height: 28px;
+	overflow: hidden;
+	display: block;
+	padding-left: 20px;
+}
+
+.poz3 {
+	background-image: url(../img/ico/ico-d.png);
+	background-repeat: no-repeat;
+	background-position: 0 -314px;
+}
+
+.poz3 span {
+	height: 28px;
+	overflow: hidden;
+	display: block;
+	padding-left: 20px;
+}
+
+.xiuxian_hd_tu {
+	width: 270px;
+	height: 220px;
+	overflow: hidden;
+	float: left;
+	padding-top: 11px;
+}
+.xiuxian_hd_tu .box{
+	display: none;	
+}
+.xiuxian_hd_tu .box.active{
+	display: block;	
+}
+.xiuxian_hd .active  a{ color: orangered; font-weight: bold; }
+/*结束*/
+
+.content1-4 {
+	height: 316px;
+	width: 330px;
+	display: block;
+	float: left;
+	margin-left: 18px;
+}
+
+.cont_ico4 {
+	background-image: url(../img/ico/ico.png);
+	background-position: -84px -4px;
+}
+
+.content1-4-1 {
+	width: 330px;
+	height: 220px;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+.cont-ico-bg {
+	width: 100px;
+	height: 100px;
+}
+
+.cont-ico-bg1 {
+	width: 54px;
+	height: 54px;
+	background: url(../img/ico/ico.png) no-repeat 0 -35px;
+	display: block;
+}
+
+.cont-ico-bg2 {
+	width: 54px;
+	height: 54px;
+	background: url(../img/ico/ico.png) no-repeat -59px -35px;
+	display: block;
+}
+
+.cont-ico-bg3 {
+	width: 54px;
+	height: 54px;
+	background: url(../img/ico/ico.png) no-repeat -117px -35px;
+	display: block;
+}
+
+.cont-ico-bg4 {
+	width: 54px;
+	height: 54px;
+	background: url(../img/ico/ico.png) no-repeat -175px -35px;
+	display: block;
+}
+
+.cont-ico-bg5 {
+	width: 54px;
+	height: 54px;
+	background: url(../img/ico/ico.png) no-repeat -234px -35px;
+	display: block;
+}
+
+.cont-ico-bg6 {
+	width: 54px;
+	height: 54px;
+	background: url(../img/ico/ico.png) no-repeat -292px -35px;
+	display: block;
+}
+
+
+/*第二块内容区*/
+
+.content-width-2 {
+	width: 1000px;
+	margin: 30px auto 0 auto;
+	height: 530px;
+}
+
+
+/*第二块子内容区巾帼文明岗*/
+
+.content-2-1 {
+	width: 380px;
+	height: 260px;
+	float: left;
+	display: block;
+}
+
+.tu-qikan {
+	float: left;
+	padding: 30px 0 30px 8px;
+}
+
+.tu-qikan p {
+	font-size: 15px;
+	text-align: center;
+}
+
+.tu-haibao {
+	float: right;
+	padding: 33px 8px 33px 0;
+}
+
+
+/*第二块子内容区微电影*/
+
+.content-2-2 {
+	width: 300px;
+	height: 260px;
+	float: left;
+	margin-left: 20px;
+	display: block;
+}
+
+.content-2-2 img {
+	margin-top: 20px;
+}
+
+
+/*第二块子内容区虚拟游*/
+
+.content-2-3 {
+	width: 270px;
+	height: 260px;
+	float: left;
+	margin-left: 20px;
+	display: block;
+}
+
+.content-2-3>div:nth-child(3) {
+	margin-top: 10px;
+}
+
+
+/*第二块子内容区横店微媒体*/
+
+.content-2-4 {
+	width: 380px;
+	height: 260px;
+	float: left;
+	margin-top: 20px;
+	display: block;
+}
+
+.content-2-4 img {
+	margin-top: 20px;
+}
+
+
+/*第二块子内容区横店圆明新园*/
+
+.content-2-5 {
+	width: 300px;
+	height: 260px;
+	float: left;
+	margin: 20px 0 0 20px;
+	display: block;
+}
+
+.content-2-5 img {
+	margin-top: 20px;
+}
+
+
+/*第二块子内容区景区承载量*/
+
+.content-2-6 {
+	width: 270px;
+	height: 260px;
+	float: left;
+	margin: 20px 0 0 20px;
+	display: block;
+}

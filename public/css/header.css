@@ -1,0 +1,123 @@
+/*头部*/
+header {
+	background-color: #EDEFDC;
+}
+
+.bg-width {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.topbg {
+	width: 1000px;
+	background-image: url(../img/header/top_bg.jpg);
+	background-repeat: no-repeat;
+	height: 120px;
+}
+
+.logo {
+	float: left;
+	margin-top: 30px;
+}
+/*头部输入框*/
+.input-top {
+	float: left;
+	margin-left: 290px;
+	margin-top: 80px;
+	width: 280px;
+	height: 34px;
+}
+
+.txtSearch {
+	width: 280px;
+	height: 34px;
+	border: 0;
+	outline: 0;
+	padding-left: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.my_search_btn {
+	color: #eee5d4;
+	border: 0;
+	background-color: #cf7d57;
+	width: 50px;
+	height: 25px;
+}
+
+
+/*右侧列表*/
+
+.list {
+	float: right;
+	margin-top: 80px;
+	margin-right: 15px;
+}
+.list li {
+	float: right;
+	padding-left: 5px;
+}
+
+.list li a {
+	font-size: 14px;
+	color: orangered;
+}
+
+.list li a:hover {
+	color: #0aa1ed;
+}
+
+.list2{
+	float: right;
+	margin-top: -33px;
+	margin-right: -40px;
+}
+
+.list,.list2 li {
+	float: right;
+	padding-left: 5px;
+}
+
+.list,.list2 li a {
+	font-size: 14px;
+	color: orangered;
+}
+
+.list,.list2 li a:hover {
+	color: #0aa1ed;
+}
+
+
+/*头部导航*/
+
+nav {
+	height: 30px;
+	background-color: #d14f42;
+}
+
+.topnav-width {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+nav li {
+	width: 100px;
+	height: 30px;
+	background-image: url(../img/header/topnav_bg.png);
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 28px;
+}
+
+nav ul li a {
+	color: #eee5d4;;
+	text-decoration: none;
+	font-size: 14px;
+}
+nav ul li:hover{
+	background:rgb(158,126,115);
+	
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/common.js"></script>
+		
+		</script>
+		<title></title>
+	</head>
+
+	<body>
+		<!--1：引用头部-->
+		<header id="header"></header>
+		<!--2:-->
+		<div class="login_kj">
+			<div style="padding: 0 20px;">
+				<div class="login_bg">
+					<form class="login_dl" action="" method="post">
+
+						<div class="black">
+							<table>
+								<tr>
+									<td align="center">
+										<h4>新用户注册</h4>
+									</td>
+									<td align="center">
+										<a href="#">直接登录</a>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<hr>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										用户名 ：
+									</td>
+									<td>
+										<input type="text" placeholder="请输入您的用户名!" id="uname" onfocus="showMsg()" onblur="unameBlur()"><br />
+										<span id="unameMsg"></span>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										登录密码 ：
+									</td>
+									<td>
+										<input type="password" placeholder="请输入您的密码！" id="upwd"><br />
+										<span id="upwdMsg"></span>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										确认密码 ：
+									</td>
+									<td>
+										<input type="password" placeholder="请确认您的密码！" id="cpwd"><br />
+										<span id="cpwdMsg"></span>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										邮箱：
+									</td>
+									<td>
+										<input type="text" placeholder="请输入邮箱地址！" id="email"><br />
+										<span id="upwdMsg"></span>
+									</td>
+								</tr>
+								
+								<tr>
+									<td colspan="2" align="center">
+										<input type="submit" value="提交注册信息" id="btn">
+									</td>
+								</tr>
+							</table>
+
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--3:引用底部-->
+		<footer id="footer">
+		</footer>
+		<!--js引入-->
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/footer.js"></script>
+	</body>
+
+</html>

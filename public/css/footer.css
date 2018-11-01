@@ -1,0 +1,29 @@
+.footer>div:first-child{
+	width: 100%;
+	background-color: #1c1c1c;
+}
+.footer>div:last-child{
+	width: 100%;
+	background-color: #2f3032;
+}
+.foot-cont1{
+	background-color: #1c1c1c;
+	color: white;
+	padding: 24px 0;
+	font-size: 12px;
+	line-height: 22px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.footer a{
+	color: white;
+}
+.foot-cont2{
+	padding-top: 12px;
+	background-color: #2f3032;
+	width: 1000px;
+	margin: 0 auto;
+	height: 50px;
+	color: white;	
+}
+

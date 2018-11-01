@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />		
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script src="js/common.js"></script>
+		
+		<title></title>
+	</head>
+
+	<body>
+		<!--1：引用头部-->
+		<header id="header"></header>
+		<!--2:-->
+		<div class="login_kj">
+			<div style="padding: 0 20px;">
+				<div class="login_bg">
+					<form class="login_dl" action="" method="post">
+
+						<div class="black">
+							<table>
+								<tr>
+									<td align="center">
+										<h4>欢迎登陆</h4>
+									</td>
+									<td align="center">
+										<a href="#">新用户注册</a>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<hr>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										用户名 ：
+									</td>
+									<td>
+										<input type="text" placeholder="请输入您的用户名!" class="uname" name="uname" id="uname" value="dingding"><br />
+										<span id="unameMsg"></span>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										密码 ：
+									</td>
+									<td>
+										<input type="password" placeholder="请输入您的密码！" class="upwd" name="upwd" id="upwd"   value="123456"><br />
+										<span id="upwdMsg"></span>
+									</td>
+								</tr>
+								<tr>
+									<td class="login" align="center">
+										<input type="checkbox">自动登录
+									</td>
+									<td align="center">
+										<a href="#">忘记密码?</a>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" align="center">
+										<input type="button" value="登录" class="login" id="btn">
+									</td>
+								</tr>
+							</table>
+
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--3:引用底部-->
+		<footer id="footer">
+		</footer>
+		<!--js引入-->
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/footer.js"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

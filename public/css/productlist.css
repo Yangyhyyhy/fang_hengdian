@@ -1,0 +1,240 @@
+body{
+	background-image: url(../img/ico/e_all_bg.png);
+	background-repeat: repeat;
+}
+.e_tbg{
+	height: 150px;
+	background-image: url(../img/ico/e_all_tbg.png);
+	background-position: center;
+}
+.header_yd {
+    padding-top: 30px;
+    text-align: center;
+    width: 956px;
+}
+.header_yd_nav {
+    width: 86px;
+    display: block;
+    float: left;
+    margin: 0 16px;
+}
+.header_yd span {
+    display: block;
+}
+.header_yd_font {
+    color: #FFF;
+    font-size: 10pt;
+}
+.header_yd_nav_mpbg {
+    height: 86px;
+    background-image: url(../img/ico/e_all_tico.png);
+    background-position: 0 -88px;
+}
+
+element.style {
+}
+#header_yd span {
+    display: block;
+}
+.header_yd_nav_tcbg {
+    height: 86px;
+    background-image: url(../img/ico/e_all_tico.png);
+    background-position: -172px 0;
+}
+/**/
+.header_yd_nav_jdbg {
+    height: 86px;
+    background-image: url(../img/ico/e_all_tico.png);
+    background-position: -85px 0;
+}
+.header_yd_nav_dzm {
+    height: 86px;
+    background-image: url(../img/ico/e_all_tico.png);
+    background-position: -430px 0;
+}
+.header_yd_nav_srdz {
+    height: 86px;
+    background-image: url(../img/ico/srdz.png);
+}
+.header_yd_nav_lysp {
+    height: 86px;
+    background-image: url(../img/ico/lvsp.png);
+}
+.header_yd_nav_srbg {
+    height: 86px;
+    background-image: url(../img/ico/e_all_tico.png);
+    background-position: -258px 0;
+}
+.header_yd_nav_dlbg {
+    height: 86px;
+    background-image: url(../img/ico/e_all_tico.png);
+    background-position: -343px 0;
+}
+
+/*轮播图banner*/
+
+.list_slider{
+	width: 1000px;
+	height: 360px;
+	margin: 0 auto;
+	background-color: white;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+/***** banner盒子 *****/
+.banner_container {
+    /***** 设置banner盒子显示区域总宽 *****/
+    width: 100%;
+    padding-left: 10px;
+	position: relative;
+}
+
+.banner_container>.inner {
+	width: 100%;
+	height: 330px;
+	/*溢出内容隐藏*/
+	overflow: hidden;
+	/* 为了子元素的绝对定位*/
+	position: relative;
+}
+.banner_container>.inner>ul>li{
+	width:100%;
+}
+.inner li{
+	position:absolute; top:0; left:0;
+	opacity:0;
+	display:block;
+}
+.inner li.active{
+	opacity:1; 
+      
+}
+/***** 箭头通用样式 *****/
+.banner_container>.left-arrow,.banner_container>.right-arrow{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	top:calc(50% - 25px);
+	opacity: 0.5;
+}
+/***** 左箭头 *****/
+.banner_container>.left-arrow {
+    /***** 控制左箭头的位置,宽高及样式 *****/
+    left: 10%;
+	background:url(../img/ico/prev.gif) center center no-repeat ; 
+}
+/***** 右箭头 *****/
+.banner_container>.right-arrow {
+    /***** 控制左箭头的位置,宽高及样式 *****/
+    right: 10%;
+	background:url(../img/ico/next.gif) center center no-repeat ;
+}
+.banner_container>ul.pagination{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 15px;
+    width:100%;
+    height:16px;
+}
+/***** 页码样式 *****/
+.banner_container>ul.pagination>li{
+    width: 8px;
+    height: 8px;
+    margin:0 10px 0 10px;
+    background-color: #FFF;
+    border:1px solid #CECECE;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+/***** 当前激活项页码样式 *****/
+.banner_container>ul.pagination>li.active{
+    background-color: #A7936E;
+    border:3px solid #DFCEAD;
+}
+
+/**/
+
+
+/**/
+.cont_bg{
+	background-color: white;
+	margin-bottom: 50px;
+	/*height: 500px;*/
+}
+/**/
+.mp_nav {
+    padding: 0 12px;
+}
+.mp_nav_a {
+    color: #c34d4d;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    display: block;
+}
+.mp_nav_b {
+    display: block;
+    float: right;
+    padding-right: 20px;
+    font-size: 12px;
+}
+.mp_nav_hr {
+    border: 0;
+    background-color: #c34d4d;
+    height: 2px;
+}
+/**/
+.mp_cp{
+    width: 240px;
+    margin-right: 6px;
+    margin-bottom: 20px;
+    display: block;
+}
+#mp_cp span {
+    display: block;
+}
+.mp_title2 {
+    height: 34px;
+    background-color: #016cba;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFF;
+    text-align: center;
+    line-height: 30px;
+}
+.mp_cp_cont2 {
+    height: 126px;
+    background-color: #d9effc;
+    padding: 8px;
+    text-align: justify;
+}
+.mp_cp_bg {
+    height: 170px;
+    width: 240px;
+}
+.mp_rt_font {
+    float: left;
+    font-size: 10pt;
+    padding: 0 10px;
+}
+.mp_rt_cont2 {
+    margin: 0 6px;
+    background-color: #FFF;
+    border: 1px solid #DCDCDC;
+    padding: 20px 0;
+}
+.mp_rt_line {
+    height: 30px;
+    width: 200px;
+    background-image: url(../img/ico/e_sprite.png);
+    background-position: 0px -470px;
+    margin-left: 8px;
+}
+.mp_rt_xl {
+    float: right;
+    color: #F00;
+}

@@ -1,0 +1,104 @@
+.bg_nav {
+	background-image: url(../img/lv-jingqu/scenic1.jpg);
+	background-position: top center;
+	height: 550px;
+	overflow: hidden;
+}
+body{
+	background-image: url(../img/ico/e_all_bg.png);
+	background-repeat: repeat;
+}
+.cont_kj {
+	position: relative;
+	top: -30px;
+	overflow: hidden;
+}
+
+.scenic_tit {
+	height: 78px;
+	color: white;
+	background-color: #da4445;
+	font-size: 19px;
+	padding-left: 50px;
+	line-height: 80px;
+}
+
+.scenic_titbg {
+	width: 1000px;
+	height: 210px;
+	background-color: #f2f0db;
+}
+
+.scenic_titimg {
+	display: block;
+	float: left;
+	margin: 15px 0 0 50px;
+}
+
+.scenic_cont {
+	display: block;
+	float: left;
+	width: 730px;
+	margin-left: 50px;
+	margin-top: 10px;
+	color: #9b8961;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.cont_body {
+	width: 1000px;
+	background-color: #f2f0db;
+}
+
+.scenic_cont_tit {
+	width: 170px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.cont_jingdian section {
+	/**/
+	width: 332px;
+	height: 166px;
+	padding: 3px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+section img {
+	width: 100%;
+	/*过渡属性，*/
+	transition: width .4s;
+}
+
+section div {
+	position: absolute;
+	left: 4px;
+	top: 0;
+	display: none;
+}
+
+section h3 {
+	margin: 0;
+	color: #998353;
+	font-size: 16px;
+	display: block;
+	padding: 5px 5px 0 0;
+}
+
+.clear {
+	clear: both;
+}
+
+section:hover .sentic_img {
+	width: 110%;
+	opacity: .2;
+}
+
+section:hover .sentic_msg {
+	display: block;
+}
