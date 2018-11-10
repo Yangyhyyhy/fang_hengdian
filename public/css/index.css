@@ -1,33 +1,22 @@
-
 /***** banner盒子 *****/
 .banner_container {
     /***** 设置banner盒子显示区域总宽 *****/
-    width: 1000px;
-    height:370px;
-    
-    margin:0 auto;
+    width: 100%;
 	position: relative;
+}
+.banner_container>.inner{
+    /***** 设置浮动后图片框的总长度 *****/
+    /***** 图片框的总长度必须大于等于单张盒子的宽度 *****/
+    width: 100%;
 }
 
-.banner_container>.inner {
-	width: 100%;
-	height: 380px;
-	/*溢出内容隐藏*/
-	overflow: hidden;
-	/* 为了子元素的绝对定位*/
-	position: relative;
+/***** 每张图片尺寸默认100%,装满整个盒子 *****/
+.banner_container>.inner>img{
+    width:100%;
+    display: none;
 }
-.banner_container>.inner>ul>li{
-	width:100%;
-}
-.inner li{
-	position:absolute; top:0; left:0;
-	opacity:0;
-	display:block;
-}
-.inner li.active{
-	opacity:1; 
-      
+.banner_container>.inner>img.active{
+	display: block;
 }
 /***** 箭头通用样式 *****/
 .banner_container>.left-arrow,.banner_container>.right-arrow{
@@ -36,20 +25,23 @@
 	height: 50px;
 	border-radius: 50%;
 	top:calc(50% - 25px);
-	opacity: 0.5;
 }
 /***** 左箭头 *****/
 .banner_container>.left-arrow {
     /***** 控制左箭头的位置,宽高及样式 *****/
-    left: 10%;
-	background:url(../img/ico/prev.gif) center center no-repeat ; 
+    left: 15%;
+	background:url(../img/ico/prev.gif) no-repeat left ; 
 }
 /***** 右箭头 *****/
 .banner_container>.right-arrow {
     /***** 控制左箭头的位置,宽高及样式 *****/
-    right: 10%;
-	background:url(../img/ico/next.gif) center center no-repeat ;
+    right: 15%;
+	background:url(../img/ico/next.gif) no-repeat left ;
 }
+.banner_container>.left-arrow,.banner_container>.right-arrow{
+	opacity: 0.5;
+}
+/***** 页码样式 *****/
 .banner_container>ul.pagination{
     position: absolute;
     display: flex;
@@ -75,8 +67,6 @@
     background-color: #A7936E;
     border:3px solid #DFCEAD;
 }
-
-/**/
 
 
 /*第一块内容区*/

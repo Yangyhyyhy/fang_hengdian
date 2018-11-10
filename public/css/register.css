@@ -58,3 +58,28 @@ body{
 			font-size: 15px;
 		}
 		
+/***********注册表单用js动态加class,集体定义样式：*************/
+.vali_info{/*页面初始，验证消息不显示，谁穿这件衣服谁隐藏*/
+    display:none;
+}
+.txt_focus{/*当文本框获取焦点时穿上，当文本框失去焦点时脱下*/
+    border:1px solid #94CF43;
+	border-radius:2px;
+	box-shadow: 5px 5px 5px rgba(148,207,67,.85) inset;
+}
+.vali_success,.vali_fail{
+    background-repeat:no-repeat;
+    background-position: left center;
+    display:block;
+}
+/* 验证消息：验证通过时的样式——绿色√ */
+.vali_success{
+	padding-left:20px;
+	width:0px;height:20px;
+	overflow:hidden;
+}
+/* 验证消息：验证失败时的样式 */
+.vali_fail{
+    color:pink;
+    padding-left:30px;
+}

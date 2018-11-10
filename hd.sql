@@ -95,7 +95,7 @@ INSERT INTO hd_index_lunbo VALUES
 /****商品页轮播广告****/
 INSERT INTO hd_product_lunbo VALUES
 (NULL, 'img/products/20180824102155907.jpg','轮播广告商品1','productlist.htm'),
-(NULL, 'img/products/jq11.png','轮播广告商品2','productlist.htm'),
+(NULL, 'img/products/tb731853283.jpg','轮播广告商品2','productlist.htm'),
 (NULL, 'img/products/20180707154555411.jpg','轮播广告商品3','productlist.htm'),
 (NULL, 'img/products/o1cn011a7ejz2q5dqvu27_!!731853283.jpg','轮播广告商品4','productlist.htm');
 

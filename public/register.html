@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/register.css"/>
-		<script src="js/common.js"></script>
-		
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>		
 		</script>
 		<title></title>
 	</head>
-
 	<body>
 		<!--1：引用头部-->
 		<header id="header"></header>
@@ -19,7 +15,6 @@
 			<div style="padding: 0 20px;">
 				<div class="login_bg">
 					<form class="login_dl" action="" method="post">
-
 						<div class="black">
 							<table>
 								<tr>
@@ -40,8 +35,8 @@
 										用户名 ：
 									</td>
 									<td>
-										<input type="text" placeholder="请输入您的用户名!" id="uname" onfocus="showMsg()" onblur="unameBlur()"><br />
-										<span id="unameMsg"></span>
+										<input type="text" placeholder="请输入您的用户名!" id="uname" name="uname" class="uname" required><br />
+										<span class="vali_info">10个字符以内的字母、数字或下划线或汉字的组合</span>
 									</td>
 								</tr>
 								<tr>
@@ -49,8 +44,8 @@
 										登录密码 ：
 									</td>
 									<td>
-										<input type="password" placeholder="请输入您的密码！" id="upwd"><br />
-										<span id="upwdMsg"></span>
+										<input type="text" placeholder="请输入您的密码！" name="upwd" class="upwd" id="upwd" required><br />
+										<span class="vali_info">密码长度在6-12位之间</span>
 									</td>
 								</tr>
 								<tr>
@@ -58,8 +53,8 @@
 										确认密码 ：
 									</td>
 									<td>
-										<input type="password" placeholder="请确认您的密码！" id="cpwd"><br />
-										<span id="cpwdMsg"></span>
+										<input type="text" placeholder="请确认您的密码！" name="cpwd" class="cpwd" id="cpwd" required><br />
+										<span class="vali_info">密码长度在6-12位之间,以字母、数字或下划线组合</span>
 									</td>
 								</tr>
 								<tr>
@@ -67,14 +62,14 @@
 										邮箱：
 									</td>
 									<td>
-										<input type="text" placeholder="请输入邮箱地址！" id="email"><br />
-										<span id="upwdMsg"></span>
+										<input type="text" placeholder="请输入邮箱地址！" name="email" class="email" id="email" required><br />
+										<span class="vali_info">请输入合法的邮箱地址</span>
 									</td>
 								</tr>
 								
 								<tr>
 									<td colspan="2" align="center">
-										<input type="submit" value="提交注册信息" id="btn">
+										<input type="submit" value="提交注册信息" class="register" id="btn" >
 									</td>
 								</tr>
 							</table>
@@ -88,7 +83,9 @@
 		<footer id="footer">
 		</footer>
 		<!--js引入-->
-		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/jquery-3.2.1.js"></script>
+		<!--<script src="js/ajax.js"></script>-->
+		<script src="js/register.js"></script>
 		<script src="js/header.js"></script>
 		<script src="js/footer.js"></script>
 	</body>

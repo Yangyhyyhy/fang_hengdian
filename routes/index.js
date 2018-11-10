@@ -18,7 +18,7 @@ router.get("/two",(req,res)=>{
 })
 
 router.get("/one",(req,res)=>{
-  var sql="SELECT * FROM hd_index_yingshi";
+  var sql="SELECT * FROM hd_index_lunbo";
   pool.query(sql,[],(err,result)=>{
     if(err) console.log(err);
     //res.send(result);

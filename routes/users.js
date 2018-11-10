@@ -52,6 +52,47 @@ router.get("/signout",(req,res)=>{
   req.session["uid"]=undefined;
   res.end();
 })
+
+//
+router.post('/isregister',(req,res)=>{
+  //浏览器发送的数据
+  //console.log(req.body);
+  var obj=req.body;
+  //验证表单提交的内容是否为空
+  //验证用户名为空
+  var $uname=obj.uname;
+  if($uname==''){
+    res.send({code:401,msg:'uname required'});
+	return;//终止函数中的代码继续执行
+  }
+  //验证密码为空
+  var $upwd=obj.upwd;
+  if($upwd==''){
+    res.send({code:402,msg:'upwd required'});
+    return;
+  }
+  //验证邮箱和电话
+  var $email=obj.email;
+  if($email==''){
+    res.send({code:404,msg:'email required'});
+	return;
+  }
+
+
+  //以上验证都通过了，执行插入数据库操作
+  var sql='INSERT INTO hd_user VALUES(NULL,?,?,?)';
+  pool.query(sql,[$uname,$upwd,$email],(err,result)=>{
+    if(err) throw err;
+    //如何判断插入成功————affectedRows
+	if(result.affectedRows>0){
+	  res.send({code:200,msg:'reg success'});
+	}else{
+	  res.send({code:301,msg:'reg error'})
+	}
+  });
+  
+});
+
 //测试：
 //http://localhost:3000/users/islogin ok:0
 //.../users/signin?uname=dingding&upwd=123456 ok:1

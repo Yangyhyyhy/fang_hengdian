@@ -38,5 +38,25 @@ $(function() {
 
 		}
 	})
+	
+	$.ajax({
+		url: "http://localhost:3000/productlist/one",
+		type: "get",
+		dataType: "json", //ajax可自动将json转为obj
+		success: function(res) {			
+			//console.log(res)				
+			$(".LB1").children(":first-child")
+			.attr('src',res[0].img)
+			$(".LB2").children(":first-child")
+			.attr('src',res[1].img)
+			$(".LB3").children(":first-child")
+			.attr('src',res[2].img)
+			$(".LB4").children(":first-child")
+			.attr('src',res[3].img)
+			
+//console.log(html)
+						
+		}
+	})
 
 })
