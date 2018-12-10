@@ -37,7 +37,7 @@ function go(){
     move(li_index);
 }
 //建立定时器
-timer=setInterval(go, 3000);
+timer=setInterval(go, 2000);
 //鼠标移入移出
 $(".banner_container").hover(
     //鼠标移入清除定时器
@@ -46,7 +46,7 @@ $(".banner_container").hover(
     },
     //鼠标移出启动定时器
     function() {
-        timer = setInterval(go, 3000);
+        timer = setInterval(go, 2000);
     }
 );
 //右箭头
